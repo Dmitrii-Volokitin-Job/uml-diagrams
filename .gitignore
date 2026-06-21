@@ -1,0 +1,4 @@
+.playwright-mcp/
+screenshots/
+scripts/
+*.DS_Store
