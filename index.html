@@ -1010,17 +1010,17 @@
           </defs>
 
           <!-- ── LEFT COLUMN: class anatomy ── -->
-          <rect x="10" y="10" width="170" height="28" rx="2" class="uml-class-header"/>
-          <rect x="10" y="38" width="170" height="70" rx="2" class="uml-class"/>
-          <rect x="10" y="108" width="170" height="42" rx="2" class="uml-class"/>
-          <text x="95" y="29" text-anchor="middle" class="uml-title">BankAccount</text>
+          <rect x="10" y="10" width="178" height="28" rx="2" class="uml-class-header"/>
+          <rect x="10" y="38" width="178" height="70" rx="2" class="uml-class"/>
+          <rect x="10" y="108" width="178" height="42" rx="2" class="uml-class"/>
+          <text x="99" y="29" text-anchor="middle" class="uml-title">BankAccount</text>
           <text x="22" y="54" class="uml-text-sm">- id : Long</text>
           <text x="22" y="68" class="uml-text-sm">- balance : double</text>
           <text x="22" y="82" class="uml-text-sm"># owner : String</text>
           <text x="22" y="96" class="uml-text-sm">~ ledger : Ledger</text>
           <text x="22" y="121" class="uml-text-sm">+ deposit(amount:double)</text>
           <text x="22" y="135" class="uml-text-sm">+ getBalance() : double</text>
-          <text x="95" y="164" text-anchor="middle" class="uml-text-sm" style="fill:var(--text3);">class anatomy</text>
+          <text x="99" y="164" text-anchor="middle" class="uml-text-sm" style="fill:var(--text3);">class anatomy</text>
 
           <!-- Visibility prefix legend -->
           <text x="10" y="186" class="uml-text-sm" style="fill:var(--text3);font-weight:600;">Visibility prefixes:</text>
@@ -1509,7 +1509,7 @@ order *-- item1 : contains    <span class="cm">' *-- = instance of «composition
           <rect x="10" y="60" width="100" height="52" rx="4" style="fill:var(--bg4);stroke:var(--text3);stroke-width:1.5;"/>
           <text x="60" y="50" text-anchor="middle" class="uml-text-sm" style="fill:var(--text3);">«device»</text>
           <text x="60" y="80" text-anchor="middle" class="uml-text-sm" style="fill:var(--text);">Browser</text>
-          <rect x="20" y="88" width="80" height="16" rx="2" style="fill:var(--bg3);stroke:var(--text3);stroke-width:1;"/>
+          <rect x="14" y="88" width="92" height="16" rx="2" style="fill:var(--bg3);stroke:var(--text3);stroke-width:1;"/>
           <text x="60" y="100" text-anchor="middle" class="uml-text-sm">«SPA» app.js</text>
 
           <!-- CloudFront -->
@@ -1788,56 +1788,56 @@ order *-- item1 : contains    <span class="cm">' *-- = instance of «composition
 
       <div class="diagram-box">
         <div class="diagram-label">OrderProcessor — internal structure with ports</div>
-        <svg width="540" height="190" viewBox="0 0 540 190">
+        <svg width="590" height="190" viewBox="0 0 590 190">
           <!-- Outer boundary -->
-          <rect x="10" y="10" width="520" height="170" rx="8" style="fill:var(--bg3);stroke:var(--blue);stroke-width:2;stroke-dasharray:7,3;"/>
-          <text x="265" y="28" text-anchor="middle" class="uml-title">«class» OrderProcessor</text>
+          <rect x="10" y="10" width="570" height="170" rx="8" style="fill:var(--bg3);stroke:var(--blue);stroke-width:2;stroke-dasharray:7,3;"/>
+          <text x="295" y="28" text-anchor="middle" class="uml-title">«class» OrderProcessor</text>
 
           <!-- Port: orderIn -->
           <rect x="2" y="78" width="16" height="16" style="fill:var(--bg3);stroke:var(--blue);stroke-width:1.5;"/>
           <text x="24" y="46" class="uml-text-sm" style="fill:var(--blue);">orderIn</text>
           <!-- Port: resultOut -->
-          <rect x="522" y="78" width="16" height="16" style="fill:var(--bg3);stroke:var(--blue);stroke-width:1.5;"/>
-          <text x="526" y="46" text-anchor="end" class="uml-text-sm" style="fill:var(--blue);">resultOut</text>
+          <rect x="572" y="78" width="16" height="16" style="fill:var(--bg3);stroke:var(--blue);stroke-width:1.5;"/>
+          <text x="576" y="46" text-anchor="end" class="uml-text-sm" style="fill:var(--blue);">resultOut</text>
 
           <!-- Part: validator -->
-          <rect x="45" y="52" width="120" height="90" rx="4" style="fill:var(--bg4);stroke:var(--green);stroke-width:1.5;"/>
-          <text x="105" y="67" text-anchor="middle" class="uml-text-sm" style="fill:var(--green);">validator</text>
-          <text x="105" y="79" text-anchor="middle" class="uml-text-sm" style="fill:var(--text3);">: Validator</text>
-          <rect x="56" y="86" width="98" height="40" rx="2" style="fill:var(--bg3);stroke:var(--text3);stroke-width:1;"/>
-          <text x="105" y="101" text-anchor="middle" class="uml-text-sm">validate(order)</text>
-          <text x="105" y="115" text-anchor="middle" class="uml-text-sm">: boolean</text>
+          <rect x="45" y="52" width="140" height="90" rx="4" style="fill:var(--bg4);stroke:var(--green);stroke-width:1.5;"/>
+          <text x="115" y="67" text-anchor="middle" class="uml-text-sm" style="fill:var(--green);">validator</text>
+          <text x="115" y="79" text-anchor="middle" class="uml-text-sm" style="fill:var(--text3);">: Validator</text>
+          <rect x="53" y="86" width="124" height="40" rx="2" style="fill:var(--bg3);stroke:var(--text3);stroke-width:1;"/>
+          <text x="115" y="101" text-anchor="middle" class="uml-text-sm">validate(order)</text>
+          <text x="115" y="115" text-anchor="middle" class="uml-text-sm">: boolean</text>
 
           <!-- Part: pricer -->
-          <rect x="205" y="52" width="120" height="90" rx="4" style="fill:var(--bg4);stroke:var(--purple);stroke-width:1.5;"/>
-          <text x="265" y="67" text-anchor="middle" class="uml-text-sm" style="fill:var(--purple);">pricer</text>
-          <text x="265" y="79" text-anchor="middle" class="uml-text-sm" style="fill:var(--text3);">: PriceCalc</text>
-          <rect x="216" y="86" width="98" height="40" rx="2" style="fill:var(--bg3);stroke:var(--text3);stroke-width:1;"/>
-          <text x="265" y="101" text-anchor="middle" class="uml-text-sm">calculate(items)</text>
-          <text x="265" y="115" text-anchor="middle" class="uml-text-sm">: BigDecimal</text>
+          <rect x="225" y="52" width="140" height="90" rx="4" style="fill:var(--bg4);stroke:var(--purple);stroke-width:1.5;"/>
+          <text x="295" y="67" text-anchor="middle" class="uml-text-sm" style="fill:var(--purple);">pricer</text>
+          <text x="295" y="79" text-anchor="middle" class="uml-text-sm" style="fill:var(--text3);">: PriceCalc</text>
+          <rect x="233" y="86" width="124" height="40" rx="2" style="fill:var(--bg3);stroke:var(--text3);stroke-width:1;"/>
+          <text x="295" y="101" text-anchor="middle" class="uml-text-sm">calculate(items)</text>
+          <text x="295" y="115" text-anchor="middle" class="uml-text-sm">: BigDecimal</text>
 
           <!-- Part: repo -->
-          <rect x="365" y="52" width="120" height="90" rx="4" style="fill:var(--bg4);stroke:var(--amber);stroke-width:1.5;"/>
-          <text x="425" y="67" text-anchor="middle" class="uml-text-sm" style="fill:var(--amber);">repo</text>
-          <text x="425" y="79" text-anchor="middle" class="uml-text-sm" style="fill:var(--text3);">: OrderRepo</text>
-          <rect x="376" y="86" width="98" height="40" rx="2" style="fill:var(--bg3);stroke:var(--text3);stroke-width:1;"/>
-          <text x="425" y="101" text-anchor="middle" class="uml-text-sm">save(order)</text>
-          <text x="425" y="115" text-anchor="middle" class="uml-text-sm">: Order</text>
+          <rect x="405" y="52" width="140" height="90" rx="4" style="fill:var(--bg4);stroke:var(--amber);stroke-width:1.5;"/>
+          <text x="475" y="67" text-anchor="middle" class="uml-text-sm" style="fill:var(--amber);">repo</text>
+          <text x="475" y="79" text-anchor="middle" class="uml-text-sm" style="fill:var(--text3);">: OrderRepo</text>
+          <rect x="413" y="86" width="124" height="40" rx="2" style="fill:var(--bg3);stroke:var(--text3);stroke-width:1;"/>
+          <text x="475" y="101" text-anchor="middle" class="uml-text-sm">save(order)</text>
+          <text x="475" y="115" text-anchor="middle" class="uml-text-sm">: Order</text>
 
           <!-- Delegation connectors -->
           <line x1="18" y1="86" x2="44" y2="86" stroke="var(--blue)" stroke-width="1.5"/>
           <polygon points="44,82 52,86 44,90" fill="var(--blue)"/>
           <!-- Internal connectors -->
-          <line x1="165" y1="97" x2="203" y2="97" stroke="var(--text3)" stroke-width="1.5"/>
-          <polygon points="203,93 211,97 203,101" fill="var(--text3)"/>
-          <line x1="325" y1="97" x2="363" y2="97" stroke="var(--text3)" stroke-width="1.5"/>
-          <polygon points="363,93 371,97 363,101" fill="var(--text3)"/>
-          <line x1="485" y1="97" x2="521" y2="86" stroke="var(--blue)" stroke-width="1.5"/>
-          <polygon points="521,82 529,86 521,90" fill="var(--blue)"/>
+          <line x1="185" y1="97" x2="223" y2="97" stroke="var(--text3)" stroke-width="1.5"/>
+          <polygon points="223,93 231,97 223,101" fill="var(--text3)"/>
+          <line x1="365" y1="97" x2="403" y2="97" stroke="var(--text3)" stroke-width="1.5"/>
+          <polygon points="403,93 411,97 403,101" fill="var(--text3)"/>
+          <line x1="545" y1="97" x2="571" y2="86" stroke="var(--blue)" stroke-width="1.5"/>
+          <polygon points="571,82 579,86 571,90" fill="var(--blue)"/>
 
           <!-- Labels -->
-          <text x="182" y="90" text-anchor="middle" class="uml-text-sm" style="fill:var(--text3);">ok</text>
-          <text x="342" y="90" text-anchor="middle" class="uml-text-sm" style="fill:var(--text3);">price</text>
+          <text x="204" y="90" text-anchor="middle" class="uml-text-sm" style="fill:var(--text3);">ok</text>
+          <text x="384" y="90" text-anchor="middle" class="uml-text-sm" style="fill:var(--text3);">price</text>
         </svg>
       </div>
 
@@ -1951,7 +1951,7 @@ order *-- item1 : contains    <span class="cm">' *-- = instance of «composition
           <text x="275" y="38" text-anchor="middle" class="uml-text" style="fill:var(--purple);">SpringFramework</text>
 
           <!-- UML metaclass -->
-          <rect x="200" y="50" width="140" height="28" rx="2" style="fill:var(--bg4);stroke:var(--text3);stroke-width:1.5;"/>
+          <rect x="192" y="50" width="156" height="28" rx="2" style="fill:var(--bg4);stroke:var(--text3);stroke-width:1.5;"/>
           <text x="270" y="68" text-anchor="middle" class="uml-text-sm" style="fill:var(--text);">UML::Class (metaclass)</text>
 
           <!-- Stereotypes row -->
@@ -4741,10 +4741,10 @@ B <span class="kw">@30</span> <-> <span class="kw">@150</span> : {&lt;200ms SLA}
             </g>
             <!-- ParkingSpot -->
             <g style="color:var(--blue)">
-              <rect x="240" y="20" width="140" height="110" rx="3" stroke="currentColor" stroke-width="1.5" fill="currentColor" fill-opacity="0.07"/>
-              <line x1="240" y1="38" x2="380" y2="38" stroke="currentColor" stroke-width="1"/>
-              <line x1="240" y1="76" x2="380" y2="76" stroke="currentColor" stroke-width="1"/>
-              <text x="310" y="33" text-anchor="middle" fill="currentColor" font-weight="700">ParkingSpot</text>
+              <rect x="240" y="20" width="150" height="110" rx="3" stroke="currentColor" stroke-width="1.5" fill="currentColor" fill-opacity="0.07"/>
+              <line x1="240" y1="38" x2="390" y2="38" stroke="currentColor" stroke-width="1"/>
+              <line x1="240" y1="76" x2="390" y2="76" stroke="currentColor" stroke-width="1"/>
+              <text x="315" y="33" text-anchor="middle" fill="currentColor" font-weight="700">ParkingSpot</text>
               <text x="248" y="52" fill="var(--text2)">-spotNumber: String</text>
               <text x="248" y="63" fill="var(--text2)">-type: SpotType</text>
               <text x="248" y="74" fill="var(--text2)">-isHandicapped: bool</text>
@@ -4793,7 +4793,7 @@ B <span class="kw">@30</span> <-> <span class="kw">@150</span> : {&lt;200ms SLA}
             <text x="160" y="70" fill="var(--text3)" font-size="9">1</text>
             <text x="218" y="70" fill="var(--text3)" font-size="9">1..*</text>
             <!-- ParkingSpot ──> Reservation -->
-            <line x1="380" y1="55" x2="450" y2="55" stroke="var(--text2)" stroke-width="1" stroke-dasharray="4,3" marker-end="url(#fp-open)"/>
+            <line x1="390" y1="55" x2="450" y2="55" stroke="var(--text2)" stroke-width="1" stroke-dasharray="4,3" marker-end="url(#fp-open)"/>
             <text x="393" y="50" fill="var(--text3)" font-size="9">0..1</text>
             <text x="430" y="50" fill="var(--text3)" font-size="9">0..1</text>
             <!-- ParkingSpot 1 ──◇ 1 Sensor (aggregation) -->
@@ -4833,9 +4833,9 @@ B <span class="kw">@30</span> <-> <span class="kw">@150</span> : {&lt;200ms SLA}
           <svg viewBox="0 0 620 260" fill="none" class="svg-diagram-sm" font-family="inherit" font-size="10.5">
             <!-- lot_downtown:ParkingLot -->
             <g style="color:var(--blue)">
-              <rect x="20" y="60" width="155" height="88" rx="3" stroke="currentColor" stroke-width="1.5" fill="currentColor" fill-opacity="0.07"/>
-              <line x1="20" y1="78" x2="175" y2="78" stroke="currentColor" stroke-width="1"/>
-              <text x="97" y="72" text-anchor="middle" fill="currentColor" font-weight="700" text-decoration="underline">lot_downtown : ParkingLot</text>
+              <rect x="20" y="60" width="164" height="88" rx="3" stroke="currentColor" stroke-width="1.5" fill="currentColor" fill-opacity="0.07"/>
+              <line x1="20" y1="78" x2="184" y2="78" stroke="currentColor" stroke-width="1"/>
+              <text x="102" y="72" text-anchor="middle" fill="currentColor" font-weight="700" text-decoration="underline">lot_downtown : ParkingLot</text>
               <text x="28" y="93" fill="var(--text2)">name = "City Center Garage"</text>
               <text x="28" y="108" fill="var(--text2)">address = "12 Main St"</text>
               <text x="28" y="123" fill="var(--text2)">capacity = 200</text>
@@ -4885,8 +4885,8 @@ B <span class="kw">@30</span> <-> <span class="kw">@150</span> : {&lt;200ms SLA}
               <text x="438" y="235" fill="var(--text2)">transactionRef = "TXN-881"</text>
             </g>
             <!-- Links -->
-            <line x1="175" y1="104" x2="220" y2="75" stroke="var(--text2)" stroke-width="1"/>
-            <text x="183" y="86" fill="var(--text3)" font-size="9">has</text>
+            <line x1="184" y1="104" x2="220" y2="75" stroke="var(--text2)" stroke-width="1"/>
+            <text x="196" y="82" fill="var(--text3)" font-size="9">has</text>
             <line x1="375" y1="75" x2="430" y2="75" stroke="var(--text2)" stroke-width="1"/>
             <text x="402" y="70" text-anchor="middle" fill="var(--text3)" font-size="9">reserved by</text>
             <line x1="297" y1="118" x2="297" y2="160" stroke="var(--text2)" stroke-width="1"/>
@@ -5870,7 +5870,7 @@ B <span class="kw">@30</span> <-> <span class="kw">@150</span> : {&lt;200ms SLA}
             <text x="355" y="230" font-family="inherit" font-size="10.5" fill="var(--text)">+ auditLog : Boolean</text>
             <text x="355" y="246" font-family="inherit" font-size="10.5" fill="var(--text)">+ encryptAtRest : Boolean</text>
             <text x="355" y="262" font-family="inherit" font-size="10.5" fill="var(--text)">+ dataClassification : Level</text>
-            <text x="355" y="282" font-family="inherit" font-size="9.5" fill="var(--text3)">drives auto-generated encryption boilerplate</text>
+            <text x="347" y="282" font-family="inherit" font-size="9.5" fill="var(--text3)">drives auto-generated encryption boilerplate</text>
 
             <!-- Extend arrows (dashed line + open hollow triangle pointing to metaclass) -->
             <!-- IoTSensor → extends Component -->
